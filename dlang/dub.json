@@ -1,0 +1,47 @@
+{
+    "name": "gdnative-dlang-test",
+	"description": "Simple test/example of using GDNative with the D Programming Language",
+    "authors": ["Leandro Motta Barros"],
+    "license": "public domain",
+
+    "targetType": "none",
+    "dflags-linux-dmd": ["-fPIC"],
+    "dflags-linux-ldc2": ["-relocation-model=pic"],
+
+    "subPackages":
+    [
+        {
+            "name": "oneclass",
+			"description": "One single classe in a library",
+            "targetType": "dynamicLibrary",
+            "importPaths":
+            [
+                "gdnative/classes",
+                "gdnative/src/"
+            ],
+			"sourcePaths":
+            [
+                "gdnative/classes",
+                "gdnative/src/",
+                "src/oneclass"
+            ]
+        },
+
+        {
+            "name": "twoclasses",
+			"description": "Two classes in a single library",
+            "targetType": "dynamicLibrary",
+            "importPaths":
+            [
+                "gdnative/classes",
+                "gdnative/src/"
+            ],
+			"sourcePaths":
+            [
+                "gdnative/classes",
+                "gdnative/src/",
+                "src/twoclasses"
+            ]
+        }
+    ]
+}
