@@ -12,7 +12,7 @@
     [
         {
             "name": "oneclass",
-			"description": "One single classe in a library",
+			"description": "One single class in a library",
             "targetType": "dynamicLibrary",
             "targetPath": "../godot",
             "targetName": "oneclass",
