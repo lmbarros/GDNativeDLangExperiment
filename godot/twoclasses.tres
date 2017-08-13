@@ -4,8 +4,8 @@
 
 platform/X11_32bit = ""
 platform/X11_64bit = "res://libtwoclasses.so"
-platform/Windows_32bit = ""
-platform/Windows_64bit = ""
+platform/Windows_32bit = "res://twoclasses-32.dll"
+platform/Windows_64bit = "res://twoclasses-64.dll"
 platform/OSX = ""
 platform/Android = ""
 platform/iOS = ""

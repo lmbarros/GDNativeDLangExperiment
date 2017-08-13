@@ -1,6 +1,6 @@
 {
     "name": "gdnative-dlang-test",
-	"description": "Simple test/example of using GDNative with the D Programming Language",
+    "description": "Simple test/example of using GDNative with the D Programming Language",
     "authors": ["Leandro Motta Barros"],
     "license": "public domain",
 
@@ -12,7 +12,7 @@
     [
         {
             "name": "oneclass",
-			"description": "One single class in a library",
+            "description": "One single class in a library",
             "targetType": "dynamicLibrary",
             "targetPath": "../godot",
             "targetName": "oneclass",
@@ -21,17 +21,19 @@
                 "gdnative/classes",
                 "gdnative/src/"
             ],
-			"sourcePaths":
+            "sourcePaths":
             [
                 "gdnative/classes",
                 "gdnative/src/",
                 "src/oneclass"
-            ]
+            ],
+        "sourceFiles-windows-x86_64": ["deps/godot.windows.tools.64.lib"],
+        "sourceFiles-windows-x86": ["deps/godot.windows.tools.32.lib"]
         },
 
         {
             "name": "twoclasses",
-			"description": "Two classes in a single library",
+            "description": "Two classes in a single library",
             "targetType": "dynamicLibrary",
             "targetPath": "../godot",
             "targetName": "twoclasses",
@@ -40,12 +42,14 @@
                 "gdnative/classes",
                 "gdnative/src/"
             ],
-			"sourcePaths":
+            "sourcePaths":
             [
                 "gdnative/classes",
                 "gdnative/src/",
                 "src/twoclasses"
-            ]
+            ],
+        "sourceFiles-windows-x86_64": ["deps/godot.windows.tools.64.lib"],
+        "sourceFiles-windows-x86": ["deps/godot.windows.tools.32.lib"]
         }
     ]
 }
