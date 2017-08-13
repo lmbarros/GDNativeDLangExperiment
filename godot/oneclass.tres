@@ -1,0 +1,14 @@
+[gd_resource type="GDNativeLibrary" format=2]
+
+[resource]
+
+platform/X11_32bit = ""
+platform/X11_64bit = "res://liboneclass.so"
+platform/Windows_32bit = ""
+platform/Windows_64bit = ""
+platform/OSX = ""
+platform/Android = ""
+platform/iOS = ""
+platform/WebAssembly = ""
+_sections_unfolded = [ "platform" ]
+

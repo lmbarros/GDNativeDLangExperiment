@@ -1,1 +1,5 @@
 dlang/.dub
+godot/.import
+godot/*.import
+*.so
+*.dll

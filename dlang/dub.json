@@ -14,6 +14,8 @@
             "name": "oneclass",
 			"description": "One single classe in a library",
             "targetType": "dynamicLibrary",
+            "targetPath": "../godot",
+            "targetName": "oneclass",
             "importPaths":
             [
                 "gdnative/classes",
@@ -31,6 +33,8 @@
             "name": "twoclasses",
 			"description": "Two classes in a single library",
             "targetType": "dynamicLibrary",
+            "targetPath": "../godot",
+            "targetName": "twoclasses",
             "importPaths":
             [
                 "gdnative/classes",
