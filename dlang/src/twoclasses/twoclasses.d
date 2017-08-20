@@ -5,9 +5,9 @@ import godot.sprite;
 
 
 /**
- * Scales things passed to it.
+ * Scales numbers passed to it.
  *
- * Quite useless, but works even with vectors!
+ * AKA "multiplication" :-)
  */
 class Scaler: GodotScript!GodotObject
 {
@@ -26,25 +26,17 @@ public:
         _scaleFactor = s;
     }
 
-    /// Scales a given value by the current scale factor.
+    /**
+     * Scales a given value by the current scale factor.
+     *
+     * I tried to make versions working on vectors, but I couldn't make them
+     * work. Maybe this is a current limitation in Godot-D, maybe I did
+     * something wrong.
+     */
     @Method
     double scale(double value)
     {
         return value * _scaleFactor;
-    }
-
-    /// Ditto
-    @Method
-    godot.Vector2 scale(godot.Vector2 vec)
-    {
-        return vec * _scaleFactor;
-    }
-
-    /// Ditto
-    @Method
-    godot.Vector3 scale(godot.Vector3 vec)
-    {
-        return vec * _scaleFactor;
     }
 
 private:
@@ -52,9 +44,11 @@ private:
 }
 
 /**
- * Scales things passed to it.
+ * Attach this script to sprite and it will move as the user generates input
+ * events.
  *
- * Quite useless, but works even with vectors!
+ * The moving code is quite ugly code, BTW. Real code should at least take
+ * `delta` into account.
  */
 class SpriteMover: GodotScript!Sprite
 {
