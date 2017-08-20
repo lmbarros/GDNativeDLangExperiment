@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://sprite_mover.gdns" type="Script" id=2]
+[ext_resource path="res://gui.gd" type="Script" id=3]
 
 [node name="theRoot" type="Node"]
 
@@ -22,6 +23,7 @@ rect_clip_content = false
 mouse_filter = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -195,5 +197,11 @@ icon_mode = 1
 __meta__ = {
 "_edit_lock_": true
 }
+
+[connection signal="pressed" from="guiPanel/addButton" to="guiPanel" method="_on_addButton_pressed"]
+
+[connection signal="pressed" from="guiPanel/averageButton" to="guiPanel" method="_on_averageButton_pressed"]
+
+[connection signal="pressed" from="guiPanel/scaleButton" to="guiPanel" method="_on_scaleButton_pressed"]
 
 
